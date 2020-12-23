@@ -1,6 +1,6 @@
 {
-    "name": "NextJS PWA Template",
-    "short_name": "Next PWA",
+    "name": "NextJS PWA Firebase Template",
+    "short_name": "Next PWA Firebase",
     "theme_color": "#000000",
     "background_color": "#fafafa",
     "display": "fullscreen",

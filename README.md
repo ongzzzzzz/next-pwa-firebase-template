@@ -1,4 +1,4 @@
-test npm run deploy
+
 add demo site
 commit this to github 
 
@@ -9,6 +9,7 @@ setup
 - new firebase app
 - run firebase init (func and host)
 - edit what
+- setup firebase fucntions in folder
 
 deploy
 
@@ -21,11 +22,13 @@ https://www.npmjs.com/package/dotenv
 
 
 
-# NextJS PWA Template
+# NextJS PWA Firebase Template
 
-![Google Lighthouse Performance Ranking](public/lighthouse.png)
+![Google Lighthouse Performance Ranking](app/public/lighthouse.png)
 
-This PWA Template is intended to be hosted on [Vercel](https://vercel.com)
+This PWA Template is intended to be hosted on [Firebase](https://firebase.google.com)
+
+[Demo Site]()
 
 ## Getting Started
 
@@ -42,9 +45,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 
+## Deployment
+
+After inputting all the configurations, run `npm run deploy` to build the NextJS app and deploy to Firebase Hosting
+
+
 ## Client-Side Firebase Integration
 
-You can rename the `.env` file to `.env.local` and add your credentials into it and use it in a page like so:
+Rename the `dotenv` file to `.env` and add your credentials into it and use it in a page like so:
 
 ```js
 import firebase from '../path/to/lib/firebase';
@@ -80,10 +88,9 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+To learn more about Firebase, take a look at the following resources:
+- [Firebase Documentation](https://firebase.google.com/docs) - learn about Firebase features and API.
+- [Firebase YouTube Channel](https://www.youtube.com/user/Firebase) - Firebase's collection of videos.
 
-## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 

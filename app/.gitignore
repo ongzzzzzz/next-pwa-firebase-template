@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # pwa recommended gitignore
-**/public/workbox-*.js
-**/public/sw.js
+**/public/workbox-*.js*
+**/public/sw.js*
 
 # dependencies
 /node_modules
@@ -44,7 +44,7 @@ yarn-error.log*
 
 
 ### Custom ###
-nextjs/**
+**/nextjs/**
 
 # Created by https://www.gitignore.io/api/node,firebase
 # Edit at https://www.gitignore.io/?templates=node,firebase
