@@ -16,7 +16,7 @@
 	},
   	"hosting": [
 		{
-			"site": "next-pwa-firebase",
+			"site": "YOUR FIREBASE HOSTING SITE",
 			"public": "public/",
 			"cleanUrls": true,
 			"rewrites": [

@@ -1,36 +1,51 @@
-
-add demo site
-commit this to github 
-
-
-clone
-
-setup
-- new firebase app
-- run firebase init (func and host)
-- edit what
-- setup firebase fucntions in folder
-
-deploy
-
-
-
-add stuff in .env
-https://nextjs.org/docs/basic-features/environment-variables
-
-https://www.npmjs.com/package/dotenv
-
-
-
 # NextJS PWA Firebase Template
+
+[Demo Site](https://next-pwa-firebase.web.app) Performance:
 
 ![Google Lighthouse Performance Ranking](app/public/lighthouse.png)
 
 This PWA Template is intended to be hosted on [Firebase](https://firebase.google.com)
 
-[Demo Site]()
+The page is served with a Firebase Cloud Function, and you can also write your own functions in the `functions/` folder.
+
 
 ## Getting Started
+
+First, create a Firebase project in the [Firebase Console](https://console.firebase.google.com)
+
+Clone the git repository:
+```bash
+git clone https://github.com/Fogeinator/next-pwa-firebase-template.git
+# or your own username if you forked this template
+```
+
+Next, install dependencies in the `app/` folder:
+```bash
+cd app
+npm install
+```
+
+Edit and rename the `dotfirebaserc` and `dotenv` files with your own config:
+
+**`.firebaserc`**
+```
+{
+    "projects": {
+        "default": "my-firebase-project-id"
+    }
+}
+```
+
+[**`.env`**](https://nextjs.org/docs/basic-features/environment-variables)
+```
+FIREBASE_API_KEY="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+...
+```
+
+Edit the `firebase.json` file and replace the hosting site with your own.
+
+
+## Developing your site
 
 First, run the development server:
 
@@ -52,7 +67,7 @@ After inputting all the configurations, run `npm run deploy` to build the NextJS
 
 ## Client-Side Firebase Integration
 
-Rename the `dotenv` file to `.env` and add your credentials into it and use it in a page like so:
+After editing the `.env` file, you can use Firebase in a page like so:
 
 ```js
 import firebase from '../path/to/lib/firebase';
