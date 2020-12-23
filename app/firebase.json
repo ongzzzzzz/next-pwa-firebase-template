@@ -1,0 +1,31 @@
+{
+  	"functions": {
+		"source": ".",
+		"ignore": [
+			"firebase.json",
+			"firbease-debug.log",
+			"**/.*",
+			"**/node_modules/**",
+			"components/**",
+			"helpers/**",
+			"pages/**",
+			"public/**",
+			"firestore.rules",
+			"README.md"
+		]
+	},
+  	"hosting": [
+		{
+			"site": "next-pwa-firebase",
+			"public": "public/",
+			"cleanUrls": true,
+			"rewrites": [
+				{
+					"source": "**",
+					"function": "nextjs-server"
+				}
+			]
+		}
+	]
+}
+

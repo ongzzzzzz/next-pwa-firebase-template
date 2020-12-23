@@ -1,0 +1,36 @@
+{
+	"name": "next-pwa-firebase-template",
+	"version": "1.0.0",
+	"description": "deploy nextjs pwa apps on firebase!",
+	"author": "fogeinator",
+	"license": "MIT",
+	"main": "server.js",
+	"scripts": {
+		"clean": "rimraf nextjs/",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"predeploy": "npm run clean && next build",
+		"deploy": "firebase deploy --only hosting,functions:nextjs-server"
+	},
+	"engines": {
+		"node": "12"
+	},
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"firebase": "^7.22.0",
+		"firebase-admin": "^9.4.1",
+		"firebase-functions": "^3.11.0",
+		"next": "^10.0.2",
+		"next-absolute-url": "^1.2.2",
+		"next-pwa": "^5.0.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"swr": "^0.2.3"
+	},
+	"devDependencies": {
+		"firebase-functions-test": "^0.2.2",
+		"rimraf": "^3.0.2",
+		"shelljs": "^0.8.4"
+	}
+}
